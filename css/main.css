@@ -1,0 +1,153 @@
+.video-section {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+
+}
+
+.video-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.torrinha {
+    color: #0B0C0C;
+    font-size: 24px;
+    font-family: Circular Std;
+    font-weight: 700;
+    line-height: 28px;
+    word-wrap: break-word
+}
+
+.swiper {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+
+
+.title-carousel {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+    margin-bottom: 1%;
+}
+
+.item-name {
+    margin-top: 2%;
+}
+
+.swiper-slide {
+    width: 318px !important;
+    margin-left: 2%;
+}
+
+.swiper-slide-first {
+    width: 678px !important;
+}
+
+.img-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-card:hover {
+    transform: scale(1.03);
+}
+
+.grid-template-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}
+
+.grid-item-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.explorer-img-first {
+    width: 678px;
+    height: 678px;
+    overflow: hidden;
+}
+
+.item-explorer {
+    padding: 5%;
+}
+
+.image-container {
+    display: grid;
+    position: relative;
+    height: 678px;
+    overflow: hidden;
+    position: relative;
+    padding: 2%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "metadata";
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    padding:5%;
+}
+
+.text-overlay h1 {
+    grid-area: title;
+    align-self: start;
+    justify-self: start;
+    margin: 5%;
+}
+
+.text-overlay p:first-of-type {
+    grid-area: subtitle;
+    align-self: end;
+    justify-self: start;
+}
+
+.text-overlay p:last-of-type {
+    grid-area: metadata;
+    align-self: end;
+    justify-self: end;
+}
+
+.btn-explorer{
+    color:black;
+    background-color: white;
+    width: 200px;
+    
+}
